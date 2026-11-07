@@ -167,3 +167,7 @@ a { color: var(--accent); }
   .nav-links a:not(.btn) { display: inline; font-size: 0.9rem; }
   .nav-links a[href="index.html"] { display: none; }
 }
+
+/* Real photos */
+.photo.has-img { background: none; border: 0; overflow: hidden; }
+.photo.has-img img { display: block; }
