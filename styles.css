@@ -171,3 +171,8 @@ a { color: var(--accent); }
 /* Real photos */
 .photo.has-img { background: none; border: 0; overflow: hidden; }
 .photo.has-img img { display: block; }
+
+/* Speaking photo row */
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 48px; }
+.gallery img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius); display: block; }
+@media (max-width: 720px) { .gallery { gap: 8px; margin-top: 32px; } }
