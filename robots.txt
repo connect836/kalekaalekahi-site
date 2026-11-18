@@ -25,4 +25,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://www.kalekaalekahi.com/sitemap.xml
+Sitemap: https://kalekaalekahi.com/sitemap.xml
