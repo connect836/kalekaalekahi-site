@@ -176,3 +176,32 @@ a { color: var(--accent); }
 .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 48px; }
 .gallery img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius); display: block; }
 @media (max-width: 720px) { .gallery { gap: 8px; margin-top: 32px; } }
+
+/* Phone nav: brand on top, links on a second row so nothing overflows */
+@media (max-width: 720px) {
+  html { scroll-padding-top: 108px; }
+  .nav-inner { flex-wrap: wrap; height: auto; padding-top: 10px; padding-bottom: 10px; row-gap: 6px; }
+  .nav-links { width: 100%; justify-content: space-between; gap: 10px; }
+  .nav-links a:not(.btn) { font-size: 0.88rem; }
+  .nav-links a[href="/"] { display: none; }
+}
+
+/* Footer */
+.footer-inner { display: grid; grid-template-columns: 1.2fr 1fr; gap: 32px; align-items: start; padding-bottom: 20px; }
+.footer-inner p { margin: 0 0 0.5em; }
+.footer-brand { font-family: "Cormorant Garamond", serif; font-size: 1.35rem; color: var(--ink); }
+.footer-links { display: grid; grid-template-columns: repeat(2, auto); gap: 8px 24px; justify-content: end; }
+.footer-links a { color: var(--muted); text-decoration: none; }
+.footer-links a:hover { color: var(--accent); }
+.footer-copy { padding-top: 16px; border-top: 1px solid var(--line); }
+@media (max-width: 720px) {
+  .footer-inner { grid-template-columns: 1fr; }
+  .footer-links { justify-content: start; }
+}
+
+/* Wedding script */
+.script { margin-top: 56px; }
+.script h2 { font-size: clamp(1.5rem, 2.6vw, 1.9rem); margin-top: 1.8em; margin-bottom: 0.5em; }
+.script p { font-size: 1.05rem; }
+.cue { color: var(--muted); font-style: italic; font-size: 0.92em; }
+.chant { font-family: "Cormorant Garamond", serif; font-size: 1.3rem; line-height: 1.6; padding: 20px 28px; background: var(--tint); border-radius: var(--radius); }
