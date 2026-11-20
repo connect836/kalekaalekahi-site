@@ -2,13 +2,13 @@
 [build]
   publish = "."
 
-# Security headers on every page.
+# Security headers on every page. (No frame blocking: The Return embeds
+# images/return/view.html from another site.)
 [[headers]]
   for = "/*"
   [headers.values]
     Strict-Transport-Security = "max-age=31536000; includeSubDomains"
     X-Content-Type-Options = "nosniff"
-    X-Frame-Options = "SAMEORIGIN"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
 
