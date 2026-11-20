@@ -4,11 +4,14 @@ Plain HTML and CSS. No build step. Netlify publishes the main folder as is, and 
 
 ## Pages
 - `index.html` Home, with sections for ceremonies, speaking, coaching and group experiences
+- `weddings.html` Maui weddings page, with process, photos and wedding FAQ
 - `about.html` About
 - `wedding-script.html` Sample wedding ceremony script
 - `give.html` Donations for For the Sacred and Makoa Quest
 - `contact.html` Contact and booking
 - `styles.css` Shared styles
+- `404.html` Page shown for any address that doesn't exist
+- `netlify.toml` Netlify settings: security headers and photo caching
 
 ## Search and AI discovery
 - Every page has a canonical address, social share tags, and structured data (schema.org) describing Kale and his services. Maui is listed as the area served; no home address appears anywhere.

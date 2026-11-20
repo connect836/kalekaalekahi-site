@@ -1,10 +1,10 @@
 # Permanent (301) redirects from the old Wix site, so Google rankings and
 # old links carry over. Netlify reads this file automatically.
 
-/ceremonies                   /#ceremonies          301
-/weddings-renewals-1          /#ceremonies          301
-/service-page/*               /#ceremonies          301
-/book-online                  /#ceremonies          301
+/ceremonies                   /weddings             301
+/weddings-renewals-1          /weddings             301
+/service-page/*               /weddings             301
+/book-online                  /weddings             301
 /services                     /#offerings           301
 /testimonial                  /about                301
 /copy-of-home                 /                     301
