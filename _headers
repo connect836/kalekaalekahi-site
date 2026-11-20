@@ -1,0 +1,3 @@
+# Lets The Return pages and member area load these images
+/images/return/*
+  Access-Control-Allow-Origin: *
