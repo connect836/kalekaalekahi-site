@@ -10,7 +10,7 @@ body{color:var(--soil);font-family:'Inter',system-ui,sans-serif;-webkit-font-smo
 .c-section:last-of-type::after{content:'The Return  \00B7  Kale Ka\02BB alekahi  \00B7  One small step a day';display:block;text-align:center;font:500 13px/1.4 'Inter',sans-serif;letter-spacing:.06em;color:var(--muted);margin:64px auto 8px;padding-top:24px;border-top:1px solid var(--line);max-width:680px}
 
 .c-heading h1,.c-heading h2,.c-heading h3{font-family:'Fraunces',Georgia,serif!important;font-weight:600!important;color:var(--soil)!important;font-size:clamp(38px,6vw,58px)!important;line-height:1.04!important;letter-spacing:-.01em!important}
-.c-heading h1::before{display:block;font:600 13px/1 'Inter',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:18px}
+.c-heading h1::before{display:block;font:600 13px/1 'Inter',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--red)!important;margin-bottom:18px}
 #heading-EjkNIQA0Pe h1::before{content:'Free self-test'}
 #heading-mgwQt6u9FP h1::before{content:'Founding members'}
 .c-sub-heading h1,.c-sub-heading h2,.c-sub-heading h3{font-family:'Inter',sans-serif!important;font-weight:400!important;color:var(--muted)!important;font-size:19px!important;line-height:1.55!important;max-width:640px;margin-left:auto!important;margin-right:auto!important}
@@ -35,7 +35,9 @@ a{color:var(--red)}
 .c-quiz input[type=radio]{width:18px;height:18px;margin:0!important;flex:none}
 .c-quiz input[type=text],.c-quiz input[type=email],.c-quiz input[type=tel]{border:1px solid var(--line)!important;border-radius:10px!important;padding:14px!important;font:16px 'Inter',sans-serif!important;background:#fff!important;color:var(--soil)!important}
 .c-quiz h1,.c-quiz h2,.c-quiz h3{font-family:'Fraunces',Georgia,serif!important;color:var(--soil)!important}
-.c-quiz .ghl-footer{padding:10px 30px 30px!important;border:0!important}
+.c-quiz .ghl-footer{padding:10px 30px 30px!important;border:0!important;height:auto!important;min-height:0!important}
+.c-quiz .ghl-footer-buttons{height:auto!important}
+.c-quiz .ghl-survey-form{border-bottom:0!important}
 .c-quiz .ghl-footer-buttons{display:flex!important;justify-content:space-between;gap:12px;background:transparent!important}
 .c-quiz .ghl-btn-placeholder{background:transparent!important}
 .c-quiz .ghl-btn{background:var(--red)!important;color:#fff!important;border-radius:999px!important;padding:14px 28px!important;font:600 16px 'Inter',sans-serif!important;display:inline-flex!important;align-items:center;gap:8px;border:0!important;cursor:pointer}
