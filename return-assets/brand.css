@@ -1,0 +1,70 @@
+/* The Return, Red Earth brand styles for return.kalekaalekahi.com (GHL funnel pages) */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap');
+:root{--bone:#F4EEE4;--bone50:#FBF8F2;--sand:#E8DFD1;--line:#DDD3C4;--soil:#2B211A;--muted:#5F5246;--red:#A63D24;--redd:#86301B;--tint:#F3E1D8;--kalo:#4E5B31;--ochre:#C8923A}
+
+/* Page ground and type */
+html,body,#app,.hl_page-preview--content,.c-section,.c-section>.inner{background-color:var(--bone)!important}
+body{color:var(--soil);font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.c-section{padding-top:28px!important;padding-bottom:40px!important}
+.c-section:first-of-type::before{content:'';display:block;width:230px;height:38px;margin:8px auto 44px;background:url(https://kalekaalekahi.com/images/return/brand/logo-horizontal.svg) center/contain no-repeat}
+.c-section:last-of-type::after{content:'The Return  \00B7  Kale Ka\02BB alekahi  \00B7  One small step a day';display:block;text-align:center;font:500 13px/1.4 'Inter',sans-serif;letter-spacing:.06em;color:var(--muted);margin:64px auto 8px;padding-top:24px;border-top:1px solid var(--line);max-width:680px}
+
+.c-heading h1,.c-heading h2,.c-heading h3{font-family:'Fraunces',Georgia,serif!important;font-weight:600!important;color:var(--soil)!important;font-size:clamp(38px,6vw,58px)!important;line-height:1.04!important;letter-spacing:-.01em!important}
+.c-heading h1::before{display:block;font:600 13px/1 'Inter',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:18px}
+#heading-EjkNIQA0Pe h1::before{content:'Free self-test'}
+#heading-mgwQt6u9FP h1::before{content:'Founding members'}
+.c-sub-heading h1,.c-sub-heading h2,.c-sub-heading h3{font-family:'Inter',sans-serif!important;font-weight:400!important;color:var(--muted)!important;font-size:19px!important;line-height:1.55!important;max-width:640px;margin-left:auto!important;margin-right:auto!important}
+.c-paragraph p,.c-paragraph{font-family:'Inter',sans-serif!important;color:var(--muted)!important;font-size:17px!important;line-height:1.65!important}
+.c-paragraph p{max-width:660px;margin-left:auto!important;margin-right:auto!important}
+.c-image img{width:min(100%,680px)!important;height:auto!important;max-height:460px;object-fit:cover;border-radius:16px!important;margin-top:12px}
+a{color:var(--red)}
+
+/* Quiz (test page) */
+.c-quiz .hl_form-builder--main,.c-quiz .ghl-form-wrap{background:transparent!important}
+.c-quiz .ghl-form-wrap{max-width:680px;margin:28px auto 0!important;border:1px solid var(--line)!important;border-radius:16px!important;overflow:hidden;box-shadow:none!important}
+.c-quiz .ghl-survey-form,.c-quiz .ghl-footer{background:var(--bone50)!important;border-radius:0!important}
+.c-quiz .ghl-survey-form{padding:30px 30px 6px!important}
+.c-quiz .field-label{font-family:'Fraunces',Georgia,serif!important;font-weight:600!important;font-size:25px!important;line-height:1.25!important;color:var(--soil)!important;margin-bottom:18px!important}
+.c-quiz .field-label span{display:none!important}
+.c-quiz .option-radio{margin:0 0 10px!important}
+.c-quiz .standard-radio-container{display:flex!important;align-items:center;gap:14px;padding:14px 18px!important;border:2px solid var(--line);border-radius:12px;background:#fff;cursor:pointer;transition:border-color .15s,background-color .15s}
+.c-quiz .standard-radio-container:hover{border-color:var(--red)}
+.c-quiz .standard-radio-container:has(input:checked){border-color:var(--red);background:var(--tint)}
+.c-quiz .standard-radio-container label{font:500 16px/1.4 'Inter',sans-serif!important;color:var(--soil)!important;cursor:pointer;margin:0!important;flex:1}
+.c-quiz input[type=radio],.c-order-form input[type=radio],input[type=checkbox]{accent-color:var(--red)}
+.c-quiz input[type=radio]{width:18px;height:18px;margin:0!important;flex:none}
+.c-quiz input[type=text],.c-quiz input[type=email],.c-quiz input[type=tel]{border:1px solid var(--line)!important;border-radius:10px!important;padding:14px!important;font:16px 'Inter',sans-serif!important;background:#fff!important;color:var(--soil)!important}
+.c-quiz h1,.c-quiz h2,.c-quiz h3{font-family:'Fraunces',Georgia,serif!important;color:var(--soil)!important}
+.c-quiz .ghl-footer{padding:10px 30px 30px!important;border:0!important}
+.c-quiz .ghl-footer-buttons{display:flex!important;justify-content:space-between;gap:12px;background:transparent!important}
+.c-quiz .ghl-btn-placeholder{background:transparent!important}
+.c-quiz .ghl-btn{background:var(--red)!important;color:#fff!important;border-radius:999px!important;padding:14px 28px!important;font:600 16px 'Inter',sans-serif!important;display:inline-flex!important;align-items:center;gap:8px;border:0!important;cursor:pointer}
+.c-quiz .ghl-btn *{color:#fff!important}
+.c-quiz .ghl-btn svg path{stroke:#fff}
+.c-quiz .ghl-btn:hover{background:var(--redd)!important}
+.c-quiz .ghl-footer-back{background:transparent!important;color:var(--soil)!important;border:2px solid var(--line)!important}
+.c-quiz .ghl-footer-back *{color:var(--soil)!important}
+.c-quiz .ghl-footer-back svg path{stroke:var(--soil)}
+
+/* Order form (join page) */
+.c-order-form .order-form__surface{background:var(--bone50)!important;border:1px solid var(--line)!important;border-radius:16px!important;box-shadow:none!important;max-width:980px;margin:28px auto 0}
+.c-order-form .order-form__headline{font-family:'Fraunces',Georgia,serif!important;font-weight:600!important;font-size:28px!important;color:var(--soil)!important}
+.c-order-form .order-form__subheadline,.c-order-form .order-form__prod-desc,.c-order-form .order-form__footer{color:var(--muted)!important;font-family:'Inter',sans-serif!important}
+.c-order-form .order-form__label{color:var(--soil)!important;font:600 14px 'Inter',sans-serif!important}
+.c-order-form .order-form__input{border-color:var(--line)!important;color:var(--soil)!important;font-family:'Inter',sans-serif!important}
+.c-order-form .order-form__input:focus{border-color:var(--red)!important}
+.c-order-form .order-form__prod{border:2px solid var(--line)!important;border-radius:12px!important;background:#fff!important;margin-bottom:10px!important;padding:6px 10px!important}
+.c-order-form .order-form__prod--selected{border-color:var(--red)!important;background:var(--tint)!important}
+.c-order-form .order-form__prod-name{color:var(--soil)!important;font-weight:600!important}
+.c-order-form .order-form__prod-price,.c-order-form .order-form__summary-row--total{color:var(--soil)!important;font-weight:600!important}
+.c-order-form .order-form__cta{background:var(--red)!important;border-color:var(--red)!important;color:#fff!important;border-radius:999px!important;font:600 17px 'Inter',sans-serif!important;padding:16px 28px!important}
+.c-order-form .order-form__cta:hover{background:var(--redd)!important}
+.c-order-form .order-form__cta *{color:#fff!important}
+.c-order-form .order-form__back{color:var(--red)!important}
+
+@media (max-width:640px){
+ .c-section:first-of-type::before{width:190px;height:32px;margin-bottom:32px}
+ .c-quiz .ghl-survey-form{padding:22px 18px 6px!important}
+ .c-quiz .ghl-footer{padding:8px 18px 22px!important}
+ .c-quiz .field-label{font-size:22px!important}
+}
