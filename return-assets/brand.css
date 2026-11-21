@@ -72,3 +72,7 @@ a{color:var(--red)}
  .c-quiz .ghl-footer{padding:8px 18px 22px!important}
  .c-quiz .field-label{font-size:22px!important}
 }
+
+/* Image frames: drop the builder's white border and drop shadow */
+.c-image .image-container,.c-image .image-container>div{background:transparent!important;box-shadow:none!important}
+.c-image img{border:0!important;box-shadow:none!important}
