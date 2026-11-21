@@ -7,7 +7,7 @@ Plain HTML and CSS. No build step. Netlify publishes the main folder as is, and 
 - `weddings.html` Maui weddings page, with process, photos and wedding FAQ
 - `about.html` About
 - `wedding-script.html` Sample wedding ceremony script
-- `give.html` Donations for For the Sacred and Makoa Quest
+- `give.html` Donations for First Wave Ministry Trust and Makoa Quest
 - `contact.html` Contact and booking
 - `styles.css` Shared styles
 - `404.html` Page shown for any address that doesn't exist
