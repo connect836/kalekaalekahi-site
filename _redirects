@@ -12,3 +12,6 @@
 /non-profit-makoa-quest-1     /give#makoa-quest     301
 /link                         /links                301
 /bio                          /links                301
+/intro-call  https://api.leadconnectorhq.com/widget/bookings/kale-intro-call  302
+/book  https://api.leadconnectorhq.com/widget/bookings/kale-intro-call  302
+/coaching-session  https://api.leadconnectorhq.com/widget/bookings/kale-coaching-session  302
