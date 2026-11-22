@@ -21,4 +21,4 @@ Plain HTML and CSS. No build step. Netlify publishes the main folder as is, and 
 - `_redirects` sends old Wix page addresses to the matching new pages so search rankings carry over.
 
 ## Booking and payments
-Booking buttons go to GHL (LeadConnector) booking calendars: /intro-call (free 15 min) and /coaching-session ($300, 60 min). No payment or bank details live on this site.
+Booking buttons go to GHL (LeadConnector) booking calendars: /intro-call (free 15 min) and /coaching-session ($400, 60 min). No payment or bank details live on this site.
