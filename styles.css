@@ -221,3 +221,7 @@ a { color: var(--accent); }
 .faq-item summary::after { content: "+"; position: absolute; right: 4px; top: -2px; font-size: 1.4rem; color: var(--accent); }
 .faq-item[open] summary::after { content: "\2212"; }
 .faq-item p { margin: 12px 0 0; color: var(--muted); }
+
+/* N.O.W. Drop List form */
+.drop-form { min-height: 300px; background: var(--tint); border: 1px solid var(--line); border-radius: var(--radius); padding: 8px; }
+.drop-form iframe { min-height: 290px; }
