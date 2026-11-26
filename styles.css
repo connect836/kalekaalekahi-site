@@ -228,3 +228,5 @@ a { color: var(--accent); }
 
 .cards.three { grid-template-columns: repeat(3, 1fr); }
 @media (max-width: 720px) { .cards.three { grid-template-columns: 1fr; } }
+
+.wrap > .narrow { margin-left: auto; margin-right: auto; }
