@@ -5,3 +5,6 @@
 # Built to Last member files: keep out of search
 /return-assets/companion/*
   X-Robots-Tag: noindex, nofollow
+
+/return-assets/firstyear.js
+  Access-Control-Allow-Origin: *
