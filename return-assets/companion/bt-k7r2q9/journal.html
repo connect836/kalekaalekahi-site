@@ -12,7 +12,9 @@
 :root{--ink:#2B211A;--paper:#FBF8F2;--sand:#F4EEE4;--line:#DDD3C4;--rust:#A63D24;--gold:#C8923A;--muted:#6b5d50}
 *{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif}
-header{background:var(--ink);color:#fff;padding:22px 20px 16px}
+header{background:var(--ink);color:#fff;padding:22px 18px 16px}
+header>*{max-width:784px;margin-left:auto;margin-right:auto}
+table.ex{table-layout:fixed}table.ex td:nth-child(1),table.ex th:nth-child(1){width:44%}table.ex td:nth-child(2),table.ex th:nth-child(2){width:22%}
 header .eyebrow{letter-spacing:.14em;font-size:11px;color:var(--gold);font-weight:600}
 header h1{font-family:Fraunces,Georgia,serif;font-weight:600;margin:4px 0 10px;font-size:28px;line-height:1.15}
 .prog{display:flex;align-items:center;gap:12px;font-size:13px;color:#e8dfd1}
@@ -224,7 +226,7 @@ const P=[
   cond:'Tuesday: 45 minutes steady, or a hike with a loaded pack. Thursday: 30 seconds hard, 60 seconds easy, 8 to 10 rounds.',
   prog:'Week 13 is a lighter week: half the sets, same movements. Then retest on Day 90 and see how far you have come.'}];
 const habits=['Mobility','Session','Outside / steps','3 real meals','Sleep 7+ hrs'];
-const tbl=(t,rows)=>`<h3>${t}</h3><table><tr><th>Exercise</th><th>Sets x reps</th><th>Notes</th></tr>${rows.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')}</table>`;
+const tbl=(t,rows)=>`<h3>${t}</h3><table class="ex"><tr><th>Exercise</th><th>Sets x reps</th><th>Notes</th></tr>${rows.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')}</table>`;
 P.forEach(p=>{
   let grid='';for(let d=p.start;d<p.start+30;d++){grid+=`<tr data-d="${d}"><td>${d}</td>${habits.map((h,i)=>`<td><input type="checkbox" data-k="d${d}_${i}" aria-label="Day ${d} ${h}"></td>`).join('')}</tr>`}
   document.getElementById('p'+p.n).innerHTML=`<h2>Phase ${p.n}: ${p.name}</h2><p class="lead">${p.days}. ${p.intro}</p>
