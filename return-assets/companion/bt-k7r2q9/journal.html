@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Built to Last: Your 90-Day Journal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2B211A;--paper:#FBF8F2;--sand:#F4EEE4;--line:#DDD3C4;--rust:#A63D24;--gold:#C8923A;--muted:#6b5d50}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif}
+header{background:var(--ink);color:#fff;padding:22px 20px 16px}
+header .eyebrow{letter-spacing:.14em;font-size:11px;color:var(--gold);font-weight:600}
+header h1{font-family:Fraunces,Georgia,serif;font-weight:600;margin:4px 0 10px;font-size:28px;line-height:1.15}
+.prog{display:flex;align-items:center;gap:12px;font-size:13px;color:#e8dfd1}
+.bar{flex:1;height:8px;background:#4a3b30;border-radius:6px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--gold);width:0;transition:width .3s}
+nav{display:flex;gap:6px;overflow-x:auto;padding:12px 16px;background:var(--sand);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+nav button{flex:none;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:20px;padding:7px 14px;font:500 14px Inter,sans-serif;cursor:pointer}
+nav button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+main{max-width:820px;margin:0 auto;padding:20px 18px 60px}
+section{display:none}section.on{display:block}
+h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:26px;margin:8px 0 6px}
+h3{font-size:17px;margin:26px 0 8px}
+.lead{color:var(--muted);margin-top:0}
+.note{background:var(--sand);border-left:4px solid var(--gold);padding:12px 14px;border-radius:6px;margin:16px 0;font-size:15px}
+table{width:100%;border-collapse:collapse;margin:8px 0 4px;font-size:15px}
+th,td{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+input[type=text],input[type=date],textarea{width:100%;border:1px solid var(--line);border-radius:6px;padding:8px 10px;font:15px Inter,sans-serif;background:#fff;color:var(--ink)}
+textarea{min-height:90px;resize:vertical}
+.grid{overflow-x:auto}
+.grid table{min-width:520px}
+.grid td,.grid th{text-align:center;padding:5px 4px}
+.grid td:first-child,.grid th:first-child{text-align:left;font-weight:600;width:56px}
+.grid input[type=checkbox]{width:20px;height:20px;accent-color:var(--rust);cursor:pointer}
+tr.done td{background:#f3e9d9}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0}
+.btn{border:0;border-radius:8px;background:var(--rust);color:#fff;padding:10px 16px;font:600 14px Inter,sans-serif;cursor:pointer;text-decoration:none;display:inline-block}
+.btn.alt{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.check{display:flex;gap:10px;align-items:flex-start;padding:6px 0}
+.check input{width:20px;height:20px;margin-top:3px;accent-color:var(--rust)}
+.cols{display:grid;grid-template-columns:repeat(2,1fr);gap:0 20px}
+.saved{font-size:12px;color:var(--muted);height:16px}
+ul,ol{padding-left:22px}
+@media(max-width:600px){.cols{grid-template-columns:1fr}header h1{font-size:23px}}
+@media print{nav,.btns,.prog{display:none}section{display:block!important;page-break-after:always}body{background:#fff}}
+</style>
+</head>
+<body>
+<header>
+  <div class="eyebrow">BUILT TO LAST · YOUR 90-DAY JOURNAL</div>
+  <h1>Move well, get strong, eat real food.</h1>
+  <div class="prog"><span id="progtxt">0 of 90 days</span><div class="bar"><i id="progbar"></i></div></div>
+</header>
+<nav id="nav"></nav>
+<main>
+
+<section id="start">
+  <h2>Before you start</h2>
+  <p class="lead">This journal is the training and eating side of The Return. Everything you write here saves as you type, on this device.</p>
+  <p>The goal is not to look a certain way for a few weeks. It is to be ready for anything life asks of you: carrying a child up a hill, paddling into wind, helping a neighbor move, or getting up off the floor with ease at eighty.</p>
+  <h3>How the 90 days work</h3>
+  <ul>
+    <li><b>Three phases of 30 days:</b> Foundation, Build, and Built to Last. Each asks a little more of you.</li>
+    <li><b>Five short sessions a week,</b> plus 10 minutes of mobility every morning and one long day outside.</li>
+    <li><b>Simple meals:</b> protein, a carb and vegetables on every plate, cooked at home most of the time.</li>
+    <li><b>Test yourself on Day 1, Day 45 and Day 90</b> so you can see the change, not guess at it.</li>
+  </ul>
+  <h3>What you need</h3>
+  <p>A floor, a doorway or bar to hang from, a backpack you can load with books or water, and a place to walk. Kettlebells or dumbbells help from Phase 2, but they are not required.</p>
+  <h3>My start date</h3>
+  <input type="date" data-k="startdate">
+  <h3>Why I am doing this</h3>
+  <p class="lead">Write one honest sentence. Read it on the days you do not want to train.</p>
+  <textarea data-k="why"></textarea>
+  <div class="note"><b>Your health comes first.</b> This is general education, not medical advice. If you have an injury, a heart condition, are pregnant, or have not trained in a long time, talk to your doctor before you begin. Stop any movement that causes sharp pain. Soreness is normal; pain is a signal.</div>
+</section>
+
+<section id="baseline">
+  <h2>Your starting point</h2>
+  <p class="lead">Test on Day 1 before you start, then on Day 45 and Day 90. Rest as long as you need between tests and write down exactly what you did so the comparison is fair.</p>
+  <div class="grid"><table id="tests"><thead><tr><th>Test</th><th>Day 1</th><th>Day 45</th><th>Day 90</th></tr></thead><tbody></tbody></table></div>
+</section>
+
+<section id="week">
+  <h2>How we train</h2>
+  <p class="lead">The whole body, the way our ancestors used it: moving through full ranges, lifting and carrying real loads, and having the engine to keep going.</p>
+  <ol>
+    <li><b>Movement and mobility,</b> every day.</li>
+    <li><b>Functional strength,</b> three days a week: squat, hinge, push, pull, carry and brace.</li>
+    <li><b>Conditioning:</b> steady work you can talk through, and hard intervals that teach you to recover.</li>
+    <li><b>Recovery:</b> sleep, sunlight, real food and one full rest day. You get stronger while you recover.</li>
+  </ol>
+  <h3>Your week</h3>
+  <table>
+    <tr><th>Day</th><th>Session</th><th>What it is</th></tr>
+    <tr><td>Monday</td><td>Strength A</td><td>Squat, push, carry. 30 to 40 minutes.</td></tr>
+    <tr><td>Tuesday</td><td>Conditioning</td><td>Steady work, 30 to 45 minutes.</td></tr>
+    <tr><td>Wednesday</td><td>Strength B</td><td>Hinge, pull, brace. 30 to 40 minutes.</td></tr>
+    <tr><td>Thursday</td><td>Conditioning</td><td>Steady in Phase 1, intervals in Phase 2 and 3.</td></tr>
+    <tr><td>Friday</td><td>Strength C</td><td>Full body. 30 to 40 minutes.</td></tr>
+    <tr><td>Saturday</td><td>Long day outside</td><td>Hike, paddle, swim, surf, yard work, play. 60 minutes or more.</td></tr>
+    <tr><td>Sunday</td><td>Rest</td><td>Walk, stretch, sun, family. No training.</td></tr>
+  </table>
+  <h3>Daily mobility: 10 minutes, every morning</h3>
+  <p class="lead">Do this first thing, before your phone. Slow, nose breathing. It doubles as your warm-up on strength days.</p>
+  <table>
+    <tr><th>Movement</th><th>Dose</th><th>Cue</th></tr>
+    <tr><td>Cat and cow</td><td>10 slow breaths</td><td>Move the spine one segment at a time.</td></tr>
+    <tr><td>World's greatest stretch</td><td>5 each side</td><td>Lunge, elbow to the floor, rotate and reach up.</td></tr>
+    <tr><td>Deep squat hold</td><td>60 seconds</td><td>Heels down. Hold a door frame if you need to.</td></tr>
+    <tr><td>90/90 hip switches</td><td>10 total</td><td>Sit tall, rotate the knees side to side.</td></tr>
+    <tr><td>Thread the needle</td><td>6 each side</td><td>Rotate through the upper back.</td></tr>
+    <tr><td>Shoulder pass-throughs</td><td>10</td><td>Towel or stick, arms straight.</td></tr>
+    <tr><td>Ankle rocks</td><td>10 each side</td><td>Knee over toes, heel stays down.</td></tr>
+    <tr><td>Dead hang or doorway stretch</td><td>30 to 60 seconds</td><td>Let the shoulders open.</td></tr>
+  </table>
+  <h3>Conditioning menu</h3>
+  <table>
+    <tr><th>Steady (you can talk)</th><th>Intervals (you cannot)</th></tr>
+    <tr><td>Brisk walk or hike</td><td>Hill sprints</td></tr>
+    <tr><td>Easy run</td><td>Burpees</td></tr>
+    <tr><td>Swim or paddle</td><td>Fast cycling or rowing</td></tr>
+    <tr><td>Rucking with a loaded pack</td><td>Kettlebell or backpack swings</td></tr>
+    <tr><td>Surfing or long beach walks</td><td>Hard paddling efforts</td></tr>
+  </table>
+  <div class="note"><b>The rules.</b> Quality before quantity. Leave one or two good reps in the tank. Miss a day, do not miss two.</div>
+</section>
+
+<section id="p1"></section>
+<section id="p2"></section>
+<section id="p3"></section>
+
+<section id="food">
+  <h2>How we eat</h2>
+  <p class="lead">No counting, no forbidden foods, no shame. Real food, mostly cooked at home, in amounts that leave you satisfied. Enjoy your meals.</p>
+  <h3>The plate</h3>
+  <ul>
+    <li><b>Protein first,</b> a palm or two: beef, eggs, fish, chicken, pork, lamb, beans.</li>
+    <li><b>A carb,</b> a cupped hand or two: rice, potatoes, sweet potato, kalo, fruit, beans. More on hard days.</li>
+    <li><b>Vegetables,</b> a fist or two: broccoli, greens, carrots, squash, whatever is in season.</li>
+    <li><b>Real fat for flavor:</b> butter, olive oil, tallow, avocado.</li>
+  </ul>
+  <h3>The habits</h3>
+  <ol>
+    <li>Three meals a day, not a day of snacks.</li>
+    <li>Sit down, slow down, phone away. Your body needs about 20 minutes to know it is full.</li>
+    <li>Cook in batches so good food is the easy choice.</li>
+    <li>Drink water through the day, more when you sweat.</li>
+    <li>Eat with your people when you can.</li>
+  </ol>
+  <h3>What I actually eat</h3>
+  <p><b>Ground beef, rice and broccoli.</b> Brown a pound of ground beef with salt, pepper and garlic. Steam broccoli until bright green. Serve over rice with a little butter. Cook a double batch and it is lunch tomorrow.</p>
+  <p><b>Eggs, any way.</b> Three or four eggs in butter with rice or potatoes and whatever vegetables are in the fridge.</p>
+  <p><b>Meat, starch, green.</b> Steak and sweet potato with greens. Fish with rice and cabbage. Change the pieces, keep the shape.</p>
+  <h3>Slow cooker meals (about 6 servings each)</h3>
+  <p><b>Shredded beef:</b> 3 lb chuck roast, onion, 4 cloves garlic, 1 cup broth, salt, pepper, cumin. Low 8 hours. Shred and serve with rice, greens and lime.</p>
+  <p><b>Kalua-style pork:</b> 3 to 4 lb pork shoulder, 1 tbsp coarse sea salt, a few drops of liquid smoke if you like. Low 10 hours. Serve with rice and steamed cabbage.</p>
+  <p><b>Chicken thighs and root vegetables:</b> 2 lb bone-in thighs, 2 lb potatoes, 4 carrots, onion, garlic, thyme, salt, a splash of broth. Low 6 hours.</p>
+  <p><b>Beef and bean chili:</b> 2 lb browned ground beef, 2 cans beans, 1 can crushed tomatoes, onion, peppers, chili powder, cumin, salt. Low 6 hours.</p>
+  <p><b>Bone broth:</b> beef or chicken bones, onion, carrots, a splash of vinegar, water to cover. Low 24 hours. Sip a mug a day or cook rice in it.</p>
+  <h3>This week's shopping list</h3>
+  <div class="cols" id="shop"></div>
+  <div class="btns"><button class="btn alt" id="clearshop">Clear the list for next week</button></div>
+  <h3>My food notes</h3>
+  <textarea data-k="foodnotes"></textarea>
+  <div class="note">If you are managing a health condition or have a history of difficulty with food, work with your doctor or a dietitian. This is a simple, general approach, not a diet.</div>
+</section>
+
+<section id="d90">
+  <h2>Day 90</h2>
+  <p class="lead">Retest everything on the Baseline tab and fill in the Day 90 column. Then sit with these questions.</p>
+  <h3>What changed in my body?</h3><textarea data-k="q_body"></textarea>
+  <h3>What changed in how I live?</h3><textarea data-k="q_live"></textarea>
+  <h3>What will I keep doing for good?</h3><textarea data-k="q_keep"></textarea>
+  <h3>What comes next?</h3>
+  <p>Run the 90 days again with heavier weights and harder intervals, or take what you learned into the next month of The Return. Either way, you are not starting over. You are building on a body that is now yours.</p>
+  <textarea data-k="q_next"></textarea>
+</section>
+
+<div class="saved" id="saved"></div>
+<div class="btns">
+  <button class="btn" onclick="window.print()">Print or save as PDF</button>
+  <button class="btn alt" id="exp">Back up my journal</button>
+  <label class="btn alt">Restore a backup<input type="file" id="imp" accept=".json" hidden></label>
+</div>
+<p class="lead" style="font-size:13px">Your entries are kept in this browser on this device. To move to a new phone or computer, back up here and restore there.</p>
+</main>
+
+<script>
+const KEY='btl-journal-v1';
+let S={};try{S=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S));const s=document.getElementById('saved');s.textContent='Saved';clearTimeout(save.t);save.t=setTimeout(()=>s.textContent='',1200)}catch(e){}};
+
+const tabs=[['start','Start'],['baseline','Baseline'],['week','How we train'],['p1','Phase 1'],['p2','Phase 2'],['p3','Phase 3'],['food','Food'],['d90','Day 90']];
+const nav=document.getElementById('nav');
+tabs.forEach(([id,l])=>{const b=document.createElement('button');b.textContent=l;b.dataset.t=id;b.onclick=()=>show(id,true);nav.appendChild(b)});
+function show(id,push){if(!document.getElementById(id))id='start';document.querySelectorAll('section').forEach(s=>s.classList.toggle('on',s.id===id));nav.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.t===id));if(push){history.replaceState(null,'','#'+id);window.scrollTo(0,0)}}
+
+const tests=['Push-ups (toes or knees, note which)','Deep squat hold (seconds, heels down)','Plank (seconds)','Dead hang from a bar (seconds)','Sit-to-stand from the floor, no hands','Walk or run 1 mile (time)','Resting heart rate on waking','Energy, 1 to 10','Sleep quality, 1 to 10'];
+document.querySelector('#tests tbody').innerHTML=tests.map((t,i)=>`<tr><td>${t}</td>${[1,45,90].map(d=>`<td><input type="text" data-k="t${i}_${d}"></td>`).join('')}</tr>`).join('');
+
+const P=[
+ {n:1,name:'Foundation',days:'Days 1 to 30',start:1,intro:'Learn the patterns and build the habit. Bodyweight and light loads only. Every rep should look clean.',
+  a:[['Bodyweight squat to a box or chair','3 x 10','Sit back, chest up, stand tall.'],['Push-up (incline if needed)','3 x 6 to 10','Body in one straight line.'],['Split squat','2 x 8 each','Hold a wall for balance if needed.'],['Backpack carry','3 x 1 minute','Light pack, walk tall.']],
+  b:[['Hip hinge to a wall','3 x 10','Push the hips back, flat back.'],['Glute bridge','3 x 12','Squeeze at the top for 2 seconds.'],['Inverted row under a sturdy table, or band row','3 x 8','Pull the chest to the edge.'],['Plank','3 x 20 to 40 sec','Ribs down, glutes tight.']],
+  c:[['Squat to box','2 x 10',''],['Push-up','2 x 8',''],['Backpack deadlift','2 x 10','Pack on the floor between your feet.'],['Bird dog','2 x 8 each side','Slow and controlled.'],['Farmer carry','3 x 1 minute','Two heavy bags.']],
+  cond:'Tuesday and Thursday: 30 to 40 minutes of steady work. Brisk walking, easy cycling, swimming or paddling. You should be able to talk in full sentences.',
+  prog:'When you hit the top of the rep range with clean form for all sets, make it harder next session: more reps, a slower lowering, or a little more weight in the pack.'},
+ {n:2,name:'Build',days:'Days 31 to 60',start:31,intro:'Add load and add intensity. Bring in kettlebells or dumbbells now if you have them. If not, load the backpack.',
+  a:[['Goblet squat','4 x 8','Weight held at the chest.'],['Push-up (floor or feet elevated)','4 x 8 to 12',''],['Reverse lunge','3 x 8 each','Hold weights if you can.'],['Suitcase carry (one side)','4 x 40 steps each','Do not lean.']],
+  b:[['Romanian deadlift','4 x 8','Weights or a heavy pack, flat back.'],['Single-leg glute bridge','3 x 10 each',''],['Pull-up or negative pull-up','4 x 3 to 6','Jump up, lower for 5 seconds.'],['Side plank','3 x 30 sec each','']],
+  c:[['Kettlebell or backpack swing','5 x 15','Snap the hips, arms just guide.'],['Step-up to a bench','3 x 8 each',''],['Pike push-up','3 x 6 to 8','Shoulders over hands.'],['Bear crawl','4 x 20 steps','Knees an inch off the ground.'],['Farmer carry, heavier','4 x 1 minute','']],
+  cond:'Tuesday: 40 minutes steady. Thursday: intervals. After a warm-up, 30 seconds hard (hill sprints, fast cycling, hard paddling, burpees) and 90 seconds easy. 6 to 8 rounds.',
+  prog:'Add a little weight each week while the reps stay clean. If form slips, drop the weight and own it again. Retest on Day 45.'},
+ {n:3,name:'Built to Last',days:'Days 61 to 90',start:61,intro:'Strength meets conditioning. Heavier work, harder intervals, and the confidence that your body will show up when you need it.',
+  a:[['Front-loaded squat (goblet or two weights)','5 x 5','Heaviest clean weight.'],['Push-up with a 3-second lowering','4 x max clean reps',''],['Walking lunge','3 x 10 each','Loaded.'],['Heavy farmer carry','5 x 40 steps','Rest 60 seconds.']],
+  b:[['Deadlift or single-leg deadlift','5 x 5',''],['Pull-up','5 x max clean reps','Use negatives to finish sets.'],['Hollow body hold','4 x 20 to 30 sec','Low back pressed down.'],['Hanging knee raise','3 x 8 to 12','']],
+  c:[['Complex, 5 rounds, rest 90 seconds:','',''],['Swing','10',''],['Goblet squat','8',''],['Push-up','8',''],['Row','8 each side',''],['Carry','40 steps','']],
+  cond:'Tuesday: 45 minutes steady, or a hike with a loaded pack. Thursday: 30 seconds hard, 60 seconds easy, 8 to 10 rounds.',
+  prog:'Week 13 is a lighter week: half the sets, same movements. Then retest on Day 90 and see how far you have come.'}];
+const habits=['Mobility','Session','Outside / steps','3 real meals','Sleep 7+ hrs'];
+const tbl=(t,rows)=>`<h3>${t}</h3><table><tr><th>Exercise</th><th>Sets x reps</th><th>Notes</th></tr>${rows.map(r=>`<tr><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`).join('')}</table>`;
+P.forEach(p=>{
+  let grid='';for(let d=p.start;d<p.start+30;d++){grid+=`<tr data-d="${d}"><td>${d}</td>${habits.map((h,i)=>`<td><input type="checkbox" data-k="d${d}_${i}" aria-label="Day ${d} ${h}"></td>`).join('')}</tr>`}
+  document.getElementById('p'+p.n).innerHTML=`<h2>Phase ${p.n}: ${p.name}</h2><p class="lead">${p.days}. ${p.intro}</p>
+  ${tbl('Strength A: squat, push, carry (Monday)',p.a)}${tbl('Strength B: hinge, pull, brace (Wednesday)',p.b)}${tbl('Strength C: full body (Friday)',p.c)}
+  <h3>Conditioning</h3><p>${p.cond}</p><div class="note"><b>How to progress:</b> ${p.prog}</div>
+  <h3>Phase ${p.n} tracker</h3><p class="lead">Tick each box when it is done. Do not chase perfect; chase most days.</p>
+  <div class="grid"><table><tr><th>Day</th>${habits.map(h=>`<th>${h}</th>`).join('')}</tr>${grid}</table></div>
+  <h3>What I am noticing this phase</h3><textarea data-k="notes${p.n}"></textarea>`;
+});
+
+const shop={Protein:['Ground beef','Eggs (lots)','Roast or stew meat','Chicken thighs','Fish','Plain yogurt'],Carbs:['Rice','Potatoes','Sweet potatoes','Oats','Beans','Kalo or poi'],'Vegetables and fruit':['Broccoli','Leafy greens','Carrots','Cabbage','Seasonal fruit','Frozen vegetables'],'Fats and flavor':['Butter','Olive oil','Avocados','Garlic and onions','Sea salt','Herbs and spices']};
+let si=0;document.getElementById('shop').innerHTML=Object.entries(shop).map(([g,items])=>`<div><h3 style="margin-top:12px">${g}</h3>${items.map(it=>`<label class="check"><input type="checkbox" data-k="s${si++}"><span>${it}</span></label>`).join('')}</div>`).join('');
+document.getElementById('clearshop').onclick=()=>{document.querySelectorAll('#shop input').forEach(c=>{c.checked=false;delete S[c.dataset.k]});save()};
+
+function progress(){let n=0;for(let d=1;d<=90;d++){let c=0;for(let i=0;i<5;i++)if(S['d'+d+'_'+i])c++;const tr=document.querySelector(`tr[data-d="${d}"]`);if(tr)tr.classList.toggle('done',c>=3);if(c>=3)n++}
+  document.getElementById('progtxt').textContent=n+' of 90 days';document.getElementById('progbar').style.width=(n/90*100)+'%'}
+
+function bind(){document.querySelectorAll('[data-k]').forEach(el=>{const k=el.dataset.k;
+  if(el.type==='checkbox'){el.checked=!!S[k];el.onchange=()=>{el.checked?S[k]=1:delete S[k];save();progress()}}
+  else{el.value=S[k]||'';el.oninput=()=>{S[k]=el.value;save()}}})}
+bind();progress();
+
+document.getElementById('exp').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(S)],{type:'application/json'}));a.download='built-to-last-journal.json';a.click()};
+document.getElementById('imp').onchange=e=>{const f=e.target.files[0];if(!f)return;f.text().then(t=>{try{S=JSON.parse(t);save();bind();progress()}catch(err){}})};
+
+const q=new URLSearchParams(location.search).get('s');
+show(q||location.hash.slice(1)||'start',false);
+</script>
+</body>
+</html>

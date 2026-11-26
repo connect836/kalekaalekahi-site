@@ -1,3 +1,7 @@
 # Lets The Return pages and member area load these images
 /images/return/*
   Access-Control-Allow-Origin: *
+
+# Built to Last member files: keep out of search
+/return-assets/companion/*
+  X-Robots-Tag: noindex, nofollow
