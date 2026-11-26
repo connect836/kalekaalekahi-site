@@ -12,10 +12,12 @@
 /non-profit-makoa-quest-1     /give#makoa-quest     301
 /link                         /links                301
 /bio                          /links                301
-/intro-call  https://api.leadconnectorhq.com/widget/bookings/kale-intro-call  302
-/book  https://api.leadconnectorhq.com/widget/bookings/kale-intro-call  302
+/intro-call  /book/intro-call  301
+/book  /book/intro-call  302
 /coaching-session  /mentorship  301
 /coaching  /mentorship  301
 /apply  /mentorship#apply  301
 /circle  /mentorship  302
-/counseling  https://api.leadconnectorhq.com/widget/bookings/kale-premarital-counseling  302
+/counseling  /book/counseling  301
+/podcast  /book/podcast  301
+/clarity  /book/clarity  301
