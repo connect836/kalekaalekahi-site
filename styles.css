@@ -225,3 +225,6 @@ a { color: var(--accent); }
 /* N.O.W. Drop List form */
 .drop-form { min-height: 300px; background: var(--tint); border: 1px solid var(--line); border-radius: var(--radius); padding: 8px; }
 .drop-form iframe { min-height: 290px; }
+
+.cards.three { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 720px) { .cards.three { grid-template-columns: 1fr; } }
